@@ -13,7 +13,7 @@ export const VehicleForm: React.FC<Props> = (props: Props) => {
   const { initialValues, submitCallback } = props;
 
   const defaultValues: Vehicle = {
-    Id: "",
+    _id: "",
     Latitude: 0,
     Longitude: 0,
     NumberPlate: "",

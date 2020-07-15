@@ -12,13 +12,13 @@ interface Props {
 
 export const EditVehicle: React.FC<Props> = (props: Props) => {
   const { match, history } = props;
-  const Id = match?.params?.Id;
+  const _id = match?.params?._id;
   const [isLoading, setIsLoading] = useState(true);
   const [vehicle, setVehicle] = useState<Vehicle>();
 
   useEffect(() => {
     VehiclesAPIService.getInstance()
-      .getSingleVehicle({ Id })
+      .getSingleVehicle({ _id })
       .then(function (response) {
         setVehicle(response);
         setIsLoading(false);

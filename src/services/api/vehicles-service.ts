@@ -22,7 +22,7 @@ export class VehiclesAPIService {
 
   public async deleteVehicle(payload: Vehicle): Promise<any> {
     const path = resources.getPath(PathName.VEHICLE_DELETE, {
-      Id: payload.Id,
+      _id: payload._id,
     });
     const response = await http.delete<Vehicle>(path);
     if (response.code !== HttpStatus.NO_CONTENT) {

@@ -31,12 +31,12 @@ export const ViewAllVehicles: React.FC<Props> = (props: Props) => {
   }
 
   vehicles.forEach((vehicle) => {
-    const { Id, NumberPlate, Speed, Latitude, Longitude } = vehicle;
+    const { _id, NumberPlate, Speed, Latitude, Longitude } = vehicle;
 
     vehicleRows.push(
       <tr key={NumberPlate}>
         <td>
-          <a href={`${URLs.VEHICLES_EDIT}/${Id}`}>{NumberPlate}</a>
+          <a href={`${URLs.VEHICLES_EDIT}/${_id}`}>{NumberPlate}</a>
         </td>
         <td>{Speed}kph</td>
         <td>{Latitude}</td>

@@ -19,7 +19,7 @@ export const ApiEndpoints: ApiEndpoint[] = [
   {
     name: PathName.VEHICLE_DELETE,
     method: HttpMethod.DELETE,
-    path: "/api/vehicle/{Id}",
+    path: "/api/vehicle/{_id}",
   },
   {
     name: PathName.VEHICLE_GET_ALL,
@@ -29,7 +29,7 @@ export const ApiEndpoints: ApiEndpoint[] = [
   {
     name: PathName.VEHICLE_GET_SINGLE,
     method: HttpMethod.GET,
-    path: "/api/vehicle/{Id}",
+    path: "/api/vehicle/{_id}",
   },
   {
     name: PathName.VEHICLE_POST,
@@ -39,6 +39,6 @@ export const ApiEndpoints: ApiEndpoint[] = [
   {
     name: PathName.VEHICLE_PUT,
     method: HttpMethod.PUT,
-    path: "/api/vehicle/{Id}",
+    path: "/api/vehicle/{_id}",
   },
 ];

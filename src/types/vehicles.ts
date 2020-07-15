@@ -5,5 +5,5 @@ export interface AllVehiclesResponse {
 }
 
 export interface VehiclePayload {
-  Id: string;
+  _id: string;
 }

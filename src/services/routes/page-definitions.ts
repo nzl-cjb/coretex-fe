@@ -48,7 +48,7 @@ export class PageDefinitions {
       title: "Create Vehicle",
     },
     {
-      path: `${URLs.VEHICLES_EDIT}/:Id`,
+      path: `${URLs.VEHICLES_EDIT}/:_id`,
       component: EditVehicle,
       description: "",
       exact: true,
